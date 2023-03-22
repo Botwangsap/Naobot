@@ -37,11 +37,11 @@ let krtu = `0ཻུ۪۪ꦽꦼ̷⸙‹•═════════════�
 `
 let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, krtu, 'Script : https://www.youtube.com/channel/UC5z1Xp6vQGU038B1RbMC3Gg\nSubs!!','MENU','.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://www.youtube.com/channel/UC5z1Xp6vQGU038B1RbMC3Gg",
+conn.sendButtonDoc(m.chat, krtu, 'Script : https://instagram.com/anggatzi123\nFollow!!','MENU','.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://instagram.com/anggatzi123",
     mediaType: "VIDEO",
-    description: "https://www.youtube.com/channel/UC5z1Xp6vQGU038B1RbMC3Gg", 
-    title: 'Akira ID',
+    description: "https://instagram.com/anggatzi123", 
+    title: 'Lisabotz-MD🥰😍',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
