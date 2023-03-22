@@ -17,9 +17,9 @@ let flaaa2 = [
     await /*conn.sendButtonLoc(m.chat, await(await require('node-fetch')(fla + `${command}`)).buffer(), kon, wm, 'Menu', usedPrefix + 'menu', m)*/
     conn.sendButtonImg(m.chat, `${pickRandom(flaaa2)}` + `*Database saat ini ${totalreg} user*\n*Registrasi saat ini ${rtotalreg} user*`, ' ', `${bottime}`,'Speed', `${usedPrefix}speed`, m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     description: sgc,
-    title: "Jᴀɴɢᴀɴ Lᴜᴘᴀ Mᴀɴᴅɪ!!",
+    title: "Silahkan join group bot kami!!",
     body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
+    thumbnail: fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg'),
     sourceUrl: sgc
      }}
   })
