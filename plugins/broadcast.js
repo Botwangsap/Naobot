@@ -39,7 +39,7 @@ let handler  = async (m, { conn, text }) => {
   conn.reply(m.chat, `Mengirim Broadcast Ke ${chats.length} Chat ${chats.length} `, m)
 
   for (let id of chats) {
-let bcbg = `${pickRandom(['./media/broad1.jpg', './media/broad2.jpg'])}`
+let bcbg = `${pickRandom(['./media/7732bfe51150b0ad497e6e7460c36c56.jpg', './media/7732bfe51150b0ad497e6e7460c36c56.jpg'])}`
 
        await conn.delay(1500)
 
