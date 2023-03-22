@@ -14,7 +14,7 @@ let flaaa2 = [
 let rules = `➯ *TIDAK SPAM BOT*
  ⟬Kena BAN? chat owner⟭
 ➯ *Jangan menjual nomer BOT!!*
-⟬Ini project open source jangan perjualbelikan⟭
+⟬Ini project open source jangan perjual belikan⟭
 ➯ *Call auto block*
 ⟬Mampus⟭
 ➯ *Maksa minta sc BOT*
@@ -31,13 +31,13 @@ let rules = `➯ *TIDAK SPAM BOT*
 └─┈⟅`
 let nth = `☰⟥⟝⟞⟝❨ *Rᴜʟᴇs Mʏ Bᴏᴛ* ❩⟞⟝⟞⟤☰`
 conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Menu', '.menu', 'Owner', '.owner', 'Credit', '.credit', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://wa.me/p/5489299044451325/6281387307198',
+    mediaUrl: 'https://wa.me/p/9545254345500673/6281998425782',
     mediaType: 2, 
     description: sgc,
     title: "Sᴇᴡᴀ Cᴇᴋ Dɪsɪɴɪ Cᴜʏ!!!",
     body: wm,
-    thumbnail: fs.readFileSync('./media/qr.png'),
-    sourceUrl: 'https://wa.me/p/5489299044451325/6281387307198',
+    thumbnail: fs.readFileSync('./media/Screenshot_20221017-123330_1.jpg'),
+    sourceUrl: 'https://wa.me/p/9545254345500673/6281998425782',
      }}
   })
 }
