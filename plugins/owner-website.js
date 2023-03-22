@@ -3,17 +3,17 @@ let handler = async (m, { conn }) => {
   let caption = `
 *「 Owner Website 」*
 
-Main Pages -> ryzn.my.id
-Blogspot -> www.win-tweak.my.id
-Uptime -> uptime.ryzn.my.id
+My instagram -> https://instagram.com/anggatzi123
+My GroupBotz -> https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p
+Donasi DANA -> https://wa.me/p/9545254345500673/6281998425782
 
 ----------------------
-Prosekai Sticker Maker -> sekai.ryzn.my.id
+My instagram -> https://instagram.com/anggatzi123
 ----------------------
 
-Revanced -> ryzn.my.id/revanced
-Spotify Mod -> ryzn.my.id/spotify
-Mod Manager -> ryzn.my.id/mods
+My instagram -> https://instagram.com/anggatzi123
+My GroupBotz -> https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p
+Donasi DANA -> https://wa.me/p/9545254345500673/6281998425782
 `.trim()
   m.reply(caption)
 }
