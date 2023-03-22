@@ -17,7 +17,7 @@ let handler = async (m, { conn, generateWAMessageFromContent, }) => {
                    "inviteCode": "null",
                    "groupName": "Halo", 
                    "caption": wm, 
-                   'jpegThumbnail': fs.readFileSync('./media/ok.jpg')
+                   'jpegThumbnail': fs.readFileSync('./media/7732bfe51150b0ad497e6e7460c36c56.jpg')
                }
            }
        }
@@ -47,13 +47,13 @@ let handler = async (m, { conn, generateWAMessageFromContent, }) => {
 ╰────────────⬣`
 
 conn.sendButtonDoc(m.chat, '▷ʙᴏᴛ sᴛᴀᴛᴜs◁', sts, 'Owner', '.owner', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https//wa.me/6281387307198?text=Halo+Gantengku',
+    mediaUrl: 'https//wa.me/6285923463470?text=mau+sewabotnya',
     mediaType: 2, 
-    description: 'wa.me/6281387307198?text=Halo+Gantengku',
-    title: "Iɴɪ Fᴀᴄᴇʙᴏᴏᴋ Gᴡ!",
+    description: 'https//wa.me/6285923463470?text=mau+sewabotnya',
+    title: "My instagram🗿!",
     body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: 'https://facebook.com/Nao.Tomori.UwU'
+    thumbnail: fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg'),
+    sourceUrl: 'https://instagram.com/anggatzi123'
      }}
   })
 
