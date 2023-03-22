@@ -190,7 +190,7 @@ const sections = [
 ]
 
 const listMessage = {
-  text: `Script : https://github.com/ShirokamiRyzen/Nao-MD`,
+  text: `Script : https://instagram.com/anggatzi123`,
   footer: teks,
   title: 'ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ɴᴏᴡ!',
   buttonText: "Pᴀʟʏɪɴɢ Nᴏᴡ...",
