@@ -89,17 +89,17 @@ let name = conn.getName(m.sender)
     //kata
     let kata = `${pickRandom('Bᴀɴʏᴀᴋ ʙᴀɴʏᴀᴋ ᴍɪɴᴜᴍ..','I ʟᴏᴠᴇ ʏᴏᴜ','Jᴀɴɢᴀɴ ᴛɪɴɢɢᴀʟɪɴ ᴀᴋᴜ','Aᴋᴜ sʏᴀɴɢ ᴋᴀᴜ ᴛᴀᴘɪ..','Nɢᴇʀᴏᴋᴏᴋ ɢᴀᴋ?','Uᴅᴀʜ ᴅᴏɴᴀsɪ ʙᴇʟᴜᴍ?','Mᴀᴜ sᴇᴡᴀʜ ɢᴀᴋ ɴɪʜ','Oᴜʜʜ ɢɪᴛᴜᴜ,Cᴜᴋᴜᴘ ᴛᴀᴜ','Dᴀʀɪ ᴍᴀɴᴀ ᴀsᴀʟ ᴍᴜ?','Jᴀɴɢᴀɴ ʟᴜᴘᴀ ᴍᴀɴᴅɪ ʏᴀ','Hᴜᴜᴜᴜ....','Uᴅᴀʜ ᴍᴀᴋᴀɴ?','Gᴀᴋ ᴍᴀᴋᴀɴ sᴀᴋɪᴛ ɴᴛᴀʀ','Mᴀɴᴅɪ sᴀɴᴀ ᴡᴏᴇ','Jᴀᴍ ʙᴇʀᴀᴘᴀ sᴋᴀʀᴀɴɢ?','Hᴀʟᴏᴏᴡ')}`
 /*conn.sendButton(m.chat, `*${ucapan()}, ${name} 👋*`, text.trim(), await genProfile(conn, m), [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], false, { quoted: fkon, contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://facebook.com/sadtime098",
+    mediaUrl: "https://instagram.com/anggatzi123",
     mediaType: "VIDEO",
-    description: "https://facebook.com/sadtime098",
+    description: "https://instagram.com/anggatzi123",
     title: `${pickRandom('Halo Apa Kabar?')}`,
     body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
+    thumbnail: fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg'),
     sourceUrl: sgc
 }
 } })*/
 let nowaa = '0'
-let nogww = '6281387307198'
+let nogww = '6285923463470'
 let nogwww = `@${nomorown1.split`@`[0]}`
 let nowa = `${nowaa.split`@`[0]}@s.whatsapp.net`
 let nogw = `${nogww.split`@`[0]}@s.whatsapp.net`
@@ -119,11 +119,11 @@ let ᴛᴇs = `Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ B
 //kalo botnya delay karena server kentang, ubah aja conn ini pake yang atas
 conn.send2ButtonImg(m.chat, await genProfile(conn, m), konten, ᴛᴇs, but1, id1, but2, id2, m, { contextInfo: { externalAdReply: { showAdAttribution: true,
 
-//conn.send2ButtonImg(m.chat, fs.readFileSync('./media/own.jpg').buffer, konten, ᴛᴇs, but1, id1, but2, id2, m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+//conn.send2ButtonImg(m.chat, fs.readFileSync('./media/7732bfe51150b0ad497e6e7460c36c56.jpg').buffer, konten, ᴛᴇs, but1, id1, but2, id2, m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     description: sgc,
     title: "Hᴀʟᴏ Jᴀɴɢᴀɴ Lᴜᴘᴀ Bᴇʀsʏᴜᴋᴜʀ!!",
     body: kata,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
+    thumbnail: fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg'),
     sourceUrl: sgc
      }}
   })
