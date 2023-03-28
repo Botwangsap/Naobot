@@ -6,6 +6,7 @@ let name = await conn.getName(who)
 
   const sentMsg = await conn.sendContactArray(m.chat, [
     [`${nomorown}`, `${await conn.getName(nomorown+'@s.whatsapp.net')}`, `💌 Developer Bot `, `yameteh😋🥰`, `BotWhatsApp@gmail.com`, `🇮🇩 Indonesia`, `📍 https://instagram.com/anggatzi123`, `👤 Owner Lisabotz-MD`],
+    [`${nomorown1}`, `${await conn.getName(nomorown+'@s.whatsapp.net')}`, `💌 Developer Bot `, `yameteh😋🥰`, `BotWhatsApp@gmail.com`, `🇮🇩 Indonesia`, `📍 https://instagram.com/anggatzi123`, `👤 Owner Lisabotz-MD`],
     [`${conn.user.jid.split('@')[0]}`, `${await conn.getName(conn.user.jid)}`, `🎈 Whatsapp Bot`, `📵 Dont Spam 😢`, `Nothing`, `🇮🇩 Indonesia`, `📍 https://instagram.com/anggatzi123`, `Hanya bot biasa yang kadang error ☺`]
   ], fkontak)
   await m.reply(`Hamlo kak🗿🥰 @${m.sender.split(`@`)[0]} itu nomor ownerku kak,jika ingin menyewa bot kami silahkan chat ownerbotnya kak🥰😎`)
