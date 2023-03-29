@@ -1,21 +1,3 @@
-
-ShirokamiRyzen
-/
-Nao-MD
-Public
-Code
-Issues
-2
-Pull requests
-Actions
-Projects
-Security
-Insights
-Nao-MD/plugins/main-menuawal.js
-
-ShirokamiRyzen modified: plugins/main-menuawal.js
- 1 contributor
-478 lines (451 sloc)  20.2 KB
 // Script Ori By BochilGaming
 // Ditulis Ulang Oleh ImYanXiao
 
