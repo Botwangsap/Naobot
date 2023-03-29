@@ -306,7 +306,7 @@ let tags = {
   "product": {
   "productImage":{
   "mimetype": "image/jpeg",
-  "jpegThumbnail": fs.readFileSync('./thumbnail.jpg'),
+  "jpegThumbnail": fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg'),
     },
   "title": `${ucapan()}`,
   "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
@@ -332,7 +332,7 @@ let tags = {
     },
     message: {
     orderMessage: {
-    itemCount : 2022,
+    itemCount : 2023,
     status: 1,
     surface : 1,
     message: `Hai Kak ${name}!`, 
@@ -350,7 +350,7 @@ let tags = {
     },
     message: {
     orderMessage: {
-    itemCount : 2022,
+    itemCount : 2023,
     status: 1,
     surface : 1,
     message: '[❗] Memuat Menu ' + '...\n Sabar Ya Kak ^ω^', 
@@ -385,7 +385,7 @@ let tags = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/ShirokamiRyzen/Nao-MD'
+                        url: 'https://instagram.com/anggatzi123'
                     }
                 },
                 {
