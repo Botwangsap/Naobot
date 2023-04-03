@@ -23,7 +23,7 @@ function ucapan() {
         res = "Selamat siang ☀️"
     }
     if (time >= 15) {
-        res = "Selamat sore 🌇"https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p
+        res = "Selamat sore 🌇"
     }
     if (time >= 18) {
         res = "Selamat malam 🌙"
