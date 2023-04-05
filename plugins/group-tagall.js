@@ -2,7 +2,7 @@ import moment from 'moment-timezone'
 let handler = async (m, { conn, text, participants, isAdmin, isOwner }) => {
     let users = participants.map(u => u.id).filter(v => v !== conn.user.jid)
     let bcbg = 'https://telegra.ph/file/da19d1c4c1e23b8b9c72e.jpg'
-    conn.m.reply(`${text ? `${text}\n` : ''}┌─「 Tag All 」\n` + users.map(v => '│◦❒ @' + v.replace(/@.+/, '')).join`\n` + '\n└────', null, */{
+    conn.m.reply(`${text ? `${text}\n` : ''}┌─「 Tag All 」\n` + users.map(v => '│◦❒ @' + v.replace(/@.+/, '')).join`\n` + '\n└────', null,
         mentions: users
     })
 }
