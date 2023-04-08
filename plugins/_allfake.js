@@ -17,8 +17,8 @@ handler.all = async function (m) {
 		global.doc = pickRandom(["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/msword", "application/pdf"])
 		
 		// Module 
-		global.fetch = import('node-fetch')
-		global.bochil = import('@bochilteam/scraper')
+		global.fetch = (await import('node-fetch')).default
+		global.bochil = await import('@bochilteam/scraper')
 		
 		const _uptime = process.uptime() * 1000
         
@@ -43,16 +43,16 @@ handler.all = async function (m) {
 					title: global.ucapan,
 					body: "Hallo " + name,
 					mediaUrl: sgc,
-					description: 'Lisabotz-MD🥰😍',
+					description: 'Nao-Botz',
 					previewType: "PHOTO",
 					thumbnail: await (await fetch(pp)).buffer(),
-					sourceUrl: "https://instagram.com/anggatzi123",					
+					sourceUrl: "https://github.com/ShirokamiRyzen",					
 				}
 			}
 		}
 		global.fakeig = {
          contextInfo: { externalAdReply: { showAdAttribution: true,
-            title: 'Lisabotz-MD😍🥰',
+            title: 'Nao-Botz',
             body: wm,
             thumbnailUrl: pp,
             sourceUrl: sgc
