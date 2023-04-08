@@ -43,16 +43,16 @@ handler.all = async function (m) {
 					title: global.ucapan,
 					body: "Hallo " + name,
 					mediaUrl: sgc,
-					description: 'Nao-Botz',
+					description: 'Lisabotz-MD🥰',
 					previewType: "PHOTO",
 					thumbnail: await (await fetch(pp)).buffer(),
-					sourceUrl: "https://github.com/ShirokamiRyzen",					
+					sourceUrl: "https://instagram.com/anggatzi123",					
 				}
 			}
 		}
 		global.fakeig = {
          contextInfo: { externalAdReply: { showAdAttribution: true,
-            title: 'Nao-Botz',
+            title: 'Lisabotz-MD🥰',
             body: wm,
             thumbnailUrl: pp,
             sourceUrl: sgc
@@ -60,7 +60,7 @@ handler.all = async function (m) {
     } }
 		// Fake 🤥
 		global.ftroli = { key: { remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 9999999999999999999999999999999999999999999999999999999, status: 1, surface: 1, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }
-		global.fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg'), thumbnail: fs.readFileSync('./thumbnail.jpg'),sendEphemeral: true}}}
+		global.fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg'), thumbnail: fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg'),sendEphemeral: true}}}
         global.fvn = {
             key: { 
                  fromMe: false,
@@ -86,7 +86,7 @@ handler.all = async function (m) {
                "extendedTextMessage": {
                         "text":wm,
                         "title": wm,
-                        'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
+                        'jpegThumbnail': fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg')
                                }
                              } 
                             }
@@ -96,7 +96,7 @@ handler.all = async function (m) {
             { fromMe: false,
             participant: `0@s.whatsapp.net`, ...(m.chat  ? 
             { remoteJid: "status@broadcast" } : {}) },
-            message: { "liveLocationMessage": { "caption":"by : WH MODS DEV","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "caption":"by : WH MODS DEV","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg')}}
            }
                
                   global.fliveLoc2 = {
@@ -104,7 +104,7 @@ handler.all = async function (m) {
             { fromMe: false,
             participant: `0@s.whatsapp.net`, ...(m.chat ? 
             { remoteJid: "status@broadcast" } : {}) },
-            message: { "liveLocationMessage": { "title": "WH MODS DEV","h": wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "title": "WH MODS DEV","h": wm, 'jpegThumbnail': fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg')}}
            }
                
                    global.ftoko = {
@@ -117,10 +117,10 @@ handler.all = async function (m) {
                        "product": {
                            "productImage":{
                                "mimetype": "image/jpeg",
-                               "jpegThumbnail": fs.readFileSync('./thumbnail.jpg') //Gambarnye
+                               "jpegThumbnail": fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg') //Gambarnye
                            },
                            "title": wm, //Kasih namalu 
-                           "description": "Simple Bot Esm", 
+                           "description": "Simple Bot WhatsApp", 
                            "currencyCode": "USD",
                            "priceAmount1000": "20000000",
                            "retailerId": "Ghost",
@@ -138,7 +138,7 @@ handler.all = async function (m) {
               message: {
                            documentMessage: {
                            title: wm, 
-                           jpegThumbnail: fs.readFileSync('./thumbnail.jpg')
+                           jpegThumbnail: fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg')
                                  }
                                }
                              }
@@ -155,7 +155,7 @@ handler.all = async function (m) {
                    "inviteCode": "null",
                    "groupName": "Kawan WH MODS DEV", 
                    "caption": wm, 
-                   'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
+                   'jpegThumbnail': fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg')
                }
            }
        }
@@ -173,7 +173,7 @@ handler.all = async function (m) {
                         'seconds': '999999999', 
                         'gifPlayback': 'true', 
                         'caption': wm,
-                        'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
+                        'jpegThumbnail': fs.readFileSync('./7732bfe51150b0ad497e6e7460c36c56.jpg')
                                }
                               }
                              }
