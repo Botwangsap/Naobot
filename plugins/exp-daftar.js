@@ -50,7 +50,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\nCreate by Ryzn`,
+  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\nCreate by AnggaKz🔥`,
   title: "▢━━━━「 Registration 」━━━━▢",
   buttonText: " Register ",
   sections
@@ -82,7 +82,7 @@ const listMessage = {
 ╰═┅═━––––––
 `
   let buttonMessage= {
-'document':{'url':'https://www.youtube.com/c/akiraid'},
+'document':{'url':'https://instagram.com/anggatzi123'},
 'mimetype':global.ddocx,
 'fileName':'▢━━━━「 Registration 」━━━━▢',
 'fileLength':fsizedoc,
@@ -91,13 +91,13 @@ const listMessage = {
 'forwardingScore':555,
 'isForwarded':true,
 'externalAdReply':{
-'mediaUrl':'https://www.youtube.com/c/akiraid',
+'mediaUrl':'https://instagram.com/anggatzi123',
 'mediaType':2,
 'previewType':'pdf',
 'title':global.titlebot,
 'body':global.titlebot,
-'thumbnail':await(await fetch('https://raw.githubusercontent.com/ShirokamiRyzen/Nao-MD/main/media/own.jpg')).buffer(),
-'sourceUrl':'https://www.youtube.com/c/akiraid'}},
+'thumbnail':await(await fetch('https://raw.githubusercontent.com/ShirokamiRyzen/Nao-MD/main/media/7732bfe51150b0ad497e6e7460c36c56.jpg')).buffer(),
+'sourceUrl':'https://instagram.com/anggatzi123'}},
 'caption':cap,
 'footer':botdate,
 'buttons':[
