@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, command }) => {
                    "inviteCode": "null",
                    "groupName": "Halo", 
                    "caption": wm, 
-                   'jpegThumbnail': fs.readFileSync('./media/ok.jpg')
+                   'jpegThumbnail': fs.readFileSync('./media/7732bfe51150b0ad497e6e7460c36c56.jpg')
                }
            }
        }
