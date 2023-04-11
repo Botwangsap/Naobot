@@ -21,7 +21,7 @@ var handler = async (m, { conn, command, text, usedPrefix }) => {
 ⬡ Views: ${views}
 ⬡ Upload: ${ago}
 ⬡ Link: ${url}
-╰────────⬣`, author.trim(), await( await conn.getFile(thumbnail)).data, ['📽VIDEO', `${usedPrefix}ytv ${url}`], false, { quoted: m, 'document': { 'url':'https://wa.me/12522518391' },
+╰────────⬣`, author.trim(), await( await conn.getFile(thumbnail)).data, ['📽VIDEO', `${usedPrefix}ytv ${url}`], false, { quoted: m, 'document': { 'url':'https://wa.me/6285923463470' },
 'mimetype': global.dpdf,
 'fileName': `Youtube Play`,
 'fileLength': 666666666666666,
@@ -30,7 +30,7 @@ mediaType:  2,
 mediaUrl: `${url}`,
 title: `AUDIO SEDANG DIKIRIM...`,
 body: wm,
-sourceUrl: 'http://wa.me/12522518391', thumbnail: await ( await conn.getFile(thumbnail)).data
+sourceUrl: 'http://wa.me/6285923463470', thumbnail: await ( await conn.getFile(thumbnail)).data
   }
  } 
 })
@@ -66,6 +66,6 @@ handler.command = /^play?$/i
 
 handler.exp = 0
 handler.limit = true
-handler.register = true
+handler.register = false
 
 export default handler
