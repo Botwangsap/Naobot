@@ -114,7 +114,7 @@ handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url> <without message>`)
 handler.tags = ['downloader']
 handler.command = /^yt(a|mp3)$/i
 
-handler.register = true
+handler.register = false
 handler.limit = true
 
 export default handler
