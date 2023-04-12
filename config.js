@@ -213,7 +213,6 @@ global.rpg = {
 
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ WEBSITE APIKEY ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 global.zenzkey = 'b8040941f7'
-global.deepai = 'quickstart-QUdJIGlzIGNvbWluZy4uLi4K' // https://deepai.org
 global.lolkey = 'SGWN' //backup : AryaXyz
 global.caliph = 'Lwlct6wi'
 global.APIs = { // API Prefix
