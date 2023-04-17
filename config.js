@@ -214,7 +214,7 @@ global.rpg = {
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ WEBSITE APIKEY ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 global.openai = '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'  //api key bisa didapatkan dari https://openai.com/api/
 global.org = 'Bot WhatsApp'  //openAI Organization name
-global.deepai = 'quickstart-QUdJIGlzIGNvbWluZy4uLi4K' // https://deepai.org
+global.deepai = '251f5286-8bb9-443d-9cb3-53c82868e200' // https://deepai.org
 global.zenzkey = 'b8040941f7'
 global.lolkey = 'SGWN' //backup : AryaXyz
 global.caliph = 'Lwlct6wi'
