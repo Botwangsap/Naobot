@@ -20,6 +20,7 @@ handler.help = ['stikerline <url>']
 handler.tags = ['sticker']
 handler.command = /^(stic?ker(line|tele(gram)?))$/i
 
+handler.premium = true
 handler.limit = true
 
 export default handler
