@@ -105,7 +105,7 @@ const listMessage = {
 {'buttonId':'.owner kontak','buttonText':{'displayText':'Owner'},'type':1}
 ],
 'headerType':6}
-    await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
+    await conn.sendMessage(m.chat, { quoted:m})
 }
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
