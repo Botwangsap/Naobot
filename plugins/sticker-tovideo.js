@@ -23,5 +23,6 @@ handler.help = ['tovideo']
 handler.tags = ['sticker']
 
 handler.command = ['tovideo']
+handler.limit = true
 
 export default handler
