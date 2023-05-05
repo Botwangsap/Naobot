@@ -10,6 +10,7 @@ handler.help = ['fb'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 
 handler.command = /^(fb(dl)?)$/i
+handler.limit = true
 
 export default handler
 
