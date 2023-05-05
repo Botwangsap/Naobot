@@ -14,5 +14,6 @@ let handler = async (m, { args, usedPrefix, command }) => {
 handler.help = ['translate'].map(v => v + ' <bahasa> <teks>')
 handler.tags = ['tools']
 handler.command = /^(tr(anslate)?)$/i
+handler.limit = true
 
 export default handler
