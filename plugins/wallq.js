@@ -19,5 +19,6 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['wallpaperq <query>']
 handler.tags = ['anime']
 handler.command = /^wall(paper)?q?$/i
+handler.limit = true
 
 export default handler
