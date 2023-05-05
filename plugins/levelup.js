@@ -18,7 +18,7 @@ Kurang *${max - user.exp}* lagi! ✨
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     
-    let pp = 'https://telegra.ph/file/712e80d59373d2dfe5cbe.jpg'
+    let pp = 'https://telegra.ph/file/c0ad2dc6d81b22122ba18.jpg'
     const vv = await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
               
     let hh = API('males', '/levelup', {
@@ -33,7 +33,7 @@ Kurang *${max - user.exp}* lagi! ✨
         const img = await levelup(teks, user.level)
             conn.send3ButtonImg(m.chat, await(await fetch(hh)).buffer(), `Cᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ, Aɴᴅᴀ Tᴇʟᴀʜ Nᴀɪᴋ Lᴇᴠᴇʟ!!\n⚙ Lᴇᴠᴇʟ : ${user.level}\n⚙ Rᴏʟᴇ : ${user.role}`, botdate, 'Menu', '.menu', 'Owner', '.owner', 'Credit', '.credit', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     description: sgc,
-    title: "Nao Botz",
+    title: "Lisabotz-MD😍🥰",
     body: wm,
     thumbnail: await(await fetch(pp)).buffer(),
     sourceUrl: sgc
@@ -42,7 +42,7 @@ Kurang *${max - user.exp}* lagi! ✨
        /*     conn.sendButton(m.chat, str, botdate, [['INVENTORY', '.inv']], m)*/
             conn.send3ButtonImg(m.chat, await(await fetch(hh)).buffer(), `Cᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ, Aɴᴅᴀ Tᴇʟᴀʜ Nᴀɪᴋ Lᴇᴠᴇʟ!!`, botdate, 'Menu', '.menu', 'Owner', '.owner', 'Credit', '.credit', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     description: sgc,
-    title: "Nao Botz",
+    title: "Lisabotz-MD😍🥰",
     body: wm,
     thumbnail: await(await fetch(pp)).buffer(),
     sourceUrl: sgc
