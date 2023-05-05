@@ -22,5 +22,6 @@ handler.help = ['igstalk'].map(v => v + ' <username>')
 handler.tags = ['stalk']
 
 handler.command = /^(igstalk)$/i
+handler.limit = true
 
 export default handler
