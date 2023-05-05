@@ -33,6 +33,7 @@ handler.help = ['sticker','s']
 handler.tags = ['sticker']
 handler.alias = ['stiker', 'sticker', 'sgif', 'stikergif', 'stickergif']
 handler.command = /^s(tic?ker)?(gif)?$/i
+handler.limit = true
 
 export default handler
 
