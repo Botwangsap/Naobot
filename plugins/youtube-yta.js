@@ -106,4 +106,5 @@ var handler = async (m, { conn, args }) => {
 handler.tags = ['downloader']
 handler.help = ['ytmp3 <link>']
 handler.command = /^yta|ytmp3|youtubemp3$/i
+handler.limit = true
 export default handler
