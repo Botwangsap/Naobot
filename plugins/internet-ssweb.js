@@ -3,7 +3,7 @@ import axios from 'axios'
 let handler = async (m, { 
 conn, text, command, usedPrefix
 }) => {
-if (!text) return m.reply(`Gunakan format ${usedPrefix + command} <url>\n\n*Contoh :* ${usedPrefix + command} https://github.com/ShirokamiRyzen`)
+if (!text) return m.reply(`Gunakan format ${usedPrefix + command} <url>\n\n*Contoh :* ${usedPrefix + command} https://instagram.com/anggatzi123`)
 m.reply("_Loading. . ._")
 var phone = await ssweb(text, 'phone')
 var desktop = await ssweb(text, 'desktop')
@@ -23,7 +23,7 @@ handler.help = ['ssweb','sspc','sshp','sstablet'].map(v => v + ' <url>')
 handler.tags = ['internet']
 handler.command = /^(ssweb|sstablet|sspc|sshp)$/i
 
-handler.limit = false
+handler.limit = true
 
 export default handler
 
