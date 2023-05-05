@@ -31,5 +31,6 @@ let handler = async (m) => {
 handler.help = ['hd <caption|reply media>']
 handler.tags = ['tools', 'ai']
 handler.command = /^(hd|upscale)$/i
+handler.limit = true
 
 export default handler
