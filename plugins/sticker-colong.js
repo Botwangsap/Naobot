@@ -9,8 +9,8 @@ try {
     if (/image|video/.test(mime)) {
       let img = await q.download()
       if (!img) throw 'Reply stiker nya!'
-      stiker = await sticker(img, false, '🍀', '🍭 • NAO-BOTZ V2 :\nBY SHIROKAMI RYZEN')
-    } else if (args[0]) stiker = await sticker(false, args[0], '🍀', '🎮 • SUBSCRIBE :\n https://www.youtube.com/channel/UC5z1Xp6vQGU038B1RbMC3Gg')
+      stiker = await sticker(img, false, '🍀', '🍭 • Lisabotz-MD🥰😍 :\nBY AnggaKz✅🗿😅')
+    } else if (args[0]) stiker = await sticker(false, args[0], '🍀', '🎮 • Follow my instagram :\n https://instagram.com/anggatzi123')
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
     else throw 'Conversion failed'
@@ -19,6 +19,7 @@ try {
 handler.help = ['colong']
 handler.tags = ['sticker']
 handler.command = /^colong$/i
-handler.owner = true
+handler.owner = false
+handler.limit = true
 
 export default handler
