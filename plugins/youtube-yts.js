@@ -47,5 +47,6 @@ let handler = async (m, {conn, text }) => {
 handler.help = ['yts <query>']
 handler.tags = ['tools']
 handler.command = /^yts(earch)?$/i
+handler.limit = true
 
 export default handler
