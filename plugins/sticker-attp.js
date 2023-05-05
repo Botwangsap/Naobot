@@ -20,5 +20,6 @@ let handler = async(m, { conn, text, args, usedPrefix, command }) => {
     handler.tags = ['sticker']
     
     handler.command = /^attp$/i
+    handler.limit = true
     
     export default handler
