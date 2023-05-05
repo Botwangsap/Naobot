@@ -7,6 +7,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['readmore', 'spoiler'].map(v => v + ' <teks>|<teks>')
 handler.tags = ['tools']
 handler.command = /^(spoiler|hidetext|readmore|selengkapnya)$/i
+handler.limit = true
 
 export default handler
 
