@@ -13,7 +13,7 @@ let handler = async (m, { conn }) => {
 handler.help = ['ppcp']
 handler.tags = ['internet']
 handler.command = /^ppcp$/i
-handler.limit = false
-handler.register = true
+handler.limit = true
+handler.register = false
 
 export default handler
