@@ -17,5 +17,6 @@ let handler = async (m, { conn, text }) => {
 	})
 }
 handler.command = /^(blur)$/i
+handler.limit = true
 
 export default handler
