@@ -21,6 +21,6 @@ handler.help = ['ppcp2']
 handler.tags = ['internet']
 handler.command = /^ppcp2$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 
 export default handler
