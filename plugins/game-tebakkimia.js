@@ -1,27 +1,30 @@
 import fetch from 'node-fetch'
 let timeout = 120000
-let poin = 500
+let poin = 4999
+let handler = async (m, { conn, command, usedPrefix }) => {
+let imgr = flaaa.getRandom()
 
-let handler = async (m, { conn, usedPrefix }) => {
     conn.tebakkimia = conn.tebakkimia ? conn.tebakkimia : {}
     let id = m.chat
-    if (id in conn.tebakkimia) return conn.reply(m.chat, 'Belum dijawab!', conn.tebakkimia[id][0])
-    let res = await fetch(API('amel', '/tebakkimia', {}, 'apikey'))
-    if (!res.ok) throw eror
-    let json = await res.json()
-    if (!json.status) throw json
-    let caption = `
-Nama unsur dari lambang ${json.lambang} adalah...
-
+    if (id in conn.tebakkimia) {
+        conn.sendButton(m.chat, 'Masih ada soal belum terjawab di chat ini', author, null, buttons, conn.tebakkimia[id][0])
+        throw false
+    }
+    let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkimia.json')).json()
+  let json = src[Math.floor(Math.random() * src.length)]
+    let caption = `*${command.toUpperCase()}*
+Usur kimia : *[ ${json.lambang} ]*
 Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}teki untuk bantuan
+Ketik ${usedPrefix}hkim untuk bantuan
 Bonus: ${poin} XP
-`.trim()
+    `.trim()
     conn.tebakkimia[id] = [
-        await conn.sendBut(m.chat, caption, wm, 'Bantuan', '.teki', m),
+        await conn.sendButton(m.chat, caption, author, `${imgr + command}`, buttons, m),
         json, poin,
         setTimeout(() => {
-            if (conn.tebakkimia[id]) conn.sendBut(m.chat, `Waktu habis!\nJawabannya adalah *${json.unsur}*`, wm, 'Tebak Kimia', '.tebakkimia', conn.tebakkimia[id][0])
+            if (conn.tebakkimia[id]) conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.unsur}* *[ ${json.lambang} ]*`, author, null, [
+                ['tebakkimia', '/tebakkimia']
+            ], conn.tebakkimia[id][0])
             delete conn.tebakkimia[id]
         }, timeout)
     ]
@@ -30,6 +33,9 @@ handler.help = ['tebakkimia']
 handler.tags = ['game']
 handler.command = /^tebakkimia/i
 
-handler.game = true
-
 export default handler
+
+const buttons = [
+    ['Hint', '/hkim'],
+    ['Nyerah', 'menyerah']
+]
