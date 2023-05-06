@@ -1,13 +1,13 @@
 let handler = async (m, { conn }) => {
-    conn.tebakgambar = conn.tebakgambar ? conn.tebakgambar : {}
+    conn.tebakingambar = conn.tebakingambar ? conn.tebakingambar : {}
     let id = m.chat
-    if (!(id in conn.tebakgambar)) throw false
-    let json = conn.tebakgambar[id][1]
-    conn.sendButton(m.chat, '```' + json.jawaban.replace(/[bcdfghjklmnpqrstvwxyz]/ig, '_') + '```', author, null, [
-        ['nyerah', 'menyerah']
+    if (!(id in conn.tebakingambar)) throw false
+    let json = conn.tebakingambar[id][1]
+    conn.sendButton(m.chat, '```' + json.jawaban.replace(/[AIUEOaiueo]/ig, '_') + '```', author, null, [
+        ['Nyerah', 'menyerah']
     ], m)
 }
-handler.command = /^hint$/i
+handler.command = /^hgam$/i
 
 handler.limit = true
 
