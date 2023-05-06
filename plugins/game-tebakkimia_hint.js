@@ -3,10 +3,12 @@ let handler = async (m, { conn }) => {
     let id = m.chat
     if (!(id in conn.tebakkimia)) throw false
     let json = conn.tebakkimia[id][1]
-    conn.reply(m.chat, '```' + json.bantuan + '```\nBalas soalnya, bukan pesan ini!', conn.tebakkimia[id][0])
+    conn.sendButton(m.chat, '```' + json.unsur.replace(/[AIUEOaiueo]/ig, '_') + '```', author, null, [
+        ['Nyerah', 'menyerah']
+    ], m)
 }
-handler.command = /^teki$/i
+handler.command = /^hkim$/i
 
-handler.limit = 1
+handler.limit = true
 
 export default handler
