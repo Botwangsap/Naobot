@@ -1,24 +1,38 @@
 import similarity from 'similarity'
 const threshold = 0.72
-let handler = m => m
-handler.before = async function (m) {
+export async function before(m) {
     let id = m.chat
-    if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/Ketik.*suka/i.test(m.quoted.contentText)) return !0
-    this.susunkata = this.susunkata ? this.susunkata : {}
-    if (!(id in this.susunkata)) return m.reply('Soal itu telah berakhir')
-    if (m.quoted.id == this.susunkata[id][0].id) {
-        let json = JSON.parse(JSON.stringify(this.susunkata[id][1]))
-        if (['.suka', 'Bantuan', ''].includes(m.text)) return !0
+    if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !m.text || !/Ketik.*hteb/i.test(m.quoted.text) || /.*hteb/i.test(m.text))
+        return !0
+    this.tebaktebakan = this.tebaktebakan ? this.tebaktebakan : {}
+    if (!(id in this.tebaktebakan))
+        return conn.sendButton(m.chat, 'Soal itu telah berakhir', author, null, buttontebaktebakan, m)
+    if (m.quoted.id == this.tebaktebakan[id][0].id) {
+        let isSurrender = /^((me)?nyerah|surr?ender)$/i.test(m.text)
+        if (isSurrender) {
+            clearTimeout(this.tebaktebakan[id][3])
+            delete this.tebaktebakan[id]
+            return conn.sendButton(m.chat, '*Yah Menyerah :( !*', author, null, buttontebaktebakan, m)
+        }
+        let json = JSON.parse(JSON.stringify(this.tebaktebakan[id][1]))
+        // m.reply(JSON.stringify(json, null, '\t'))
         if (m.text.toLowerCase() == json.jawaban.toLowerCase().trim()) {
-            global.db.data.users[m.sender].exp += this.susunkata[id][2]
-            await this.sendBut(m.chat, `*Benar!* +${this.susunkata[id][2]} XP`, wm, 'Susun Kata', '.susunkata')
-            clearTimeout(this.susunkata[id][3])
-            delete this.susunkata[id]
-        } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold) m.reply(`*Dikit Lagi!*`)
-        else m.reply(`*Salah!*`)
+            global.db.data.users[m.sender].exp += this.tebaktebakan[id][2]
+            conn.sendButton(m.chat, `*Benar!*\n+${this.tebaktebakan[id][2]} XP`, author, null, buttontebaktebakan, m)
+            clearTimeout(this.tebaktebakan[id][3])
+            delete this.tebaktebakan[id]
+        } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold)
+            m.reply(`*Dikit Lagi!*`)
+        else
+            conn.sendButton(m.chat, `*Salah!*`, author, null, [
+                ['Hint', '/hteb'],
+                ['Nyerah', 'menyerah']
+            ], m)
     }
     return !0
 }
-handler.exp = 0
+export const exp = 0
 
-export default handler
+const buttontebaktebakan = [
+    ['tebaktebakan', '/tebaktebakan']
+]
